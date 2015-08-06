@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Bouncing Clouds</title>
+    <script src="js/prefixfree.min.js"></script>
+    <style>
+        #mainContent {
+            background-color: #A2BFCE;
+            border-radius: 4px;
+            padding: 10px;
+            width: 600px;
+            height: 300px;
+            overflow: hidden;
+        }
+        .cloud {
+            position: absolute;
+        }
+        #bigcloud {
+            margin-left: 100px;
+            margin-top: 15px;
+            animation: bobble 2s infinite; /* the name of the animation // the duration // the number of time the animation will loop */
+            /* line 24 is shorthand for:
+            animation-name: bobble;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            */
+        }
+        @keyframes bobble {
+            0% { /* either a percentage value of the from/to keyword */
+                transform: translate3d(50px, 40px, 0px);
+                animation-timing-function: ease-in;
+            }
+            50% {
+                transform: translate3d(50px, 50px, 0px);
+                animation-timing-function: ease-out;
+            }
+            100% {
+                transform: translate3d(50px, 40px, 0px);
+            }                        
+        }
+    </style>
+</head>
+
+<body>
+    <div id="mainContent">
+        <img id="bigcloud" alte="#" class="cloud" height="154" src="images/bigCloud.png" width="238">
+    </div>
+</body>
+
+</html>
