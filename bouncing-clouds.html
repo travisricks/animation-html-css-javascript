@@ -28,6 +28,11 @@
             animation-iteration-count: infinite;
             */
         }
+        #smallcloud {
+            animation: bobble 4s infinite;
+            margin-top: 65px;
+            margin-left: 200px;
+        }
         @keyframes bobble {
             0% { /* either a percentage value of the from/to keyword */
                 transform: translate3d(50px, 40px, 0px);
@@ -47,6 +52,7 @@
 <body>
     <div id="mainContent">
         <img id="bigcloud" alte="#" class="cloud" height="154" src="images/bigCloud.png" width="238">
+        <img id="smallcloud" alt="#" class="cloud" height="103" src="images/smallCloud.png" width="158">
     </div>
 </body>
 
